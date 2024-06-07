@@ -29,15 +29,48 @@
           <img src="assets/arrow-right.svg" alt="" />
         </a>
       </div>
-      <nav class="main-nav flex justify-center py-4">
+      <nav class="main-nav flex justify-center py-4 relative">
         <div class="container px-8">
           <div class="flex justify-between">
             <div class="flex items-center">
-              <img
-                class="block md:hidden"
-                src="assets/menu-line-horizontal.svg"
-                alt=""
-              />
+              <div class="relative block md:hidden cursor-pointer">
+                <svg
+                  id="burger"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    class="line1"
+                    d="M7 8H17M7"
+                    stroke="#141718"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                  />
+                  <path
+                    class="line2"
+                    d="M7 12H17M7"
+                    stroke="#141718"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                  />
+                  <path
+                    class="line3"
+                    d="M7 16H17"
+                    stroke="#141718"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                  />
+                </svg>
+                <input
+                  type="checkbox"
+                  name=""
+                  id=""
+                  class="opacity-0 h-6 w-6 absolute top-0 cursor-pointer"
+                />
+              </div>
               <span class="logo text-[#141718] text-[16px] md:text-[24px]"
                 >3legant.</span
               >
@@ -57,6 +90,35 @@
               </li>
               <li class="flex items-center">
                 <a href="#"><img src="assets/Cart Button.svg" alt="" /></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div
+          class="absolute left-0 bg-white top-[60px] w-full border-b border-[#ffab00] transition-transform"
+          id="nav-mobile"
+        >
+          <div class="container px-8">
+            <ul class="flex flex-col">
+              <li class="inline-block">
+                <a class="py-2 block hover:text-[#ffab00] transition" href="#"
+                  >Home</a
+                >
+              </li>
+              <li class="inline-block">
+                <a class="py-2 block hover:text-[#ffab00] transition" href="#"
+                  >Shop</a
+                >
+              </li>
+              <li class="inline-block">
+                <a class="py-2 block hover:text-[#ffab00] transition" href="#"
+                  >Product</a
+                >
+              </li>
+              <li class="inline-block">
+                <a class="py-2 block hover:text-[#ffab00] transition" href="#"
+                  >Contact Us</a
+                >
               </li>
             </ul>
           </div>

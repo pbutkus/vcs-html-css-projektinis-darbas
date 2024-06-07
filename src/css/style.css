@@ -685,12 +685,20 @@ video {
   right: -2rem;
 }
 
+.left-0 {
+  left: 0px;
+}
+
 .left-\[5\%\] {
   left: 5%;
 }
 
 .top-0 {
   top: 0px;
+}
+
+.top-\[60px\] {
+  top: 60px;
 }
 
 .z-10 {
@@ -737,6 +745,10 @@ video {
   display: block;
 }
 
+.inline-block {
+  display: inline-block;
+}
+
 .flex {
   display: flex;
 }
@@ -757,6 +769,10 @@ video {
   height: 3rem;
 }
 
+.h-6 {
+  height: 1.5rem;
+}
+
 .h-\[280px\] {
   height: 280px;
 }
@@ -767,6 +783,10 @@ video {
 
 .w-12 {
   width: 3rem;
+}
+
+.w-6 {
+  width: 1.5rem;
 }
 
 .w-\[167px\] {
@@ -784,6 +804,10 @@ video {
 
 .cursor-grab {
   cursor: grab;
+}
+
+.cursor-pointer {
+  cursor: pointer;
 }
 
 .select-none {
@@ -898,6 +922,11 @@ video {
   border-color: rgb(255 171 0 / var(--tw-border-opacity));
 }
 
+.border-\[\#ffab00\] {
+  --tw-border-opacity: 1;
+  border-color: rgb(255 171 0 / var(--tw-border-opacity));
+}
+
 .bg-\[\#141718\] {
   --tw-bg-opacity: 1;
   background-color: rgb(20 23 24 / var(--tw-bg-opacity));
@@ -919,6 +948,11 @@ video {
 
 .bg-transparent {
   background-color: transparent;
+}
+
+.bg-white {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
 .fill-\[\#6C7275\] {
@@ -1099,12 +1133,6 @@ video {
   transition-duration: 150ms;
 }
 
-.transition-colors {
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
-}
-
 .duration-300 {
   transition-duration: 300ms;
 }
@@ -1153,6 +1181,39 @@ h6 {
   font-weight: 500;
   line-height: 24px;
   text-align: center;
+}
+
+#nav-mobile {
+  transform: translateX(-100%);
+}
+
+nav:has(:checked) #nav-mobile {
+  transform: translateX(0);
+}
+
+#burger > .line1,
+.line2,
+.line3 {
+  transform-origin: center center;
+  transition: transform 100ms ease-out;
+}
+
+nav:has(:checked) #burger > .line2 {
+  transform: scaleX(0);
+}
+
+nav:not(:has(:checked)) #burger > .line2 {
+  transition-delay: 100ms;
+}
+
+nav:has(:checked) #burger > .line1 {
+  transform: rotate(45deg) translateY(4px);
+  transition-delay: 100ms;
+}
+
+nav:has(:checked) #burger > .line3 {
+  transform: rotate(-45deg) translateY(-4px);
+  transition-delay: 100ms;
 }
 
 /* HERO */
@@ -1409,6 +1470,11 @@ header {
 .placeholder\:text-\[\#6C7275\]::placeholder {
   --tw-text-opacity: 1;
   color: rgb(108 114 117 / var(--tw-text-opacity));
+}
+
+.hover\:text-\[\#ffab00\]:hover {
+  --tw-text-opacity: 1;
+  color: rgb(255 171 0 / var(--tw-text-opacity));
 }
 
 .hover\:text-\[\#ffc95c\]:hover {

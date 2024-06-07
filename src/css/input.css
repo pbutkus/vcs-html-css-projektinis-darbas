@@ -182,6 +182,39 @@ h6 {
   text-align: center;
 }
 
+#nav-mobile {
+  transform: translateX(-100%);
+}
+
+nav:has(:checked) #nav-mobile {
+  transform: translateX(0);
+}
+
+#burger > .line1,
+.line2,
+.line3 {
+  transform-origin: center center;
+  transition: transform 100ms ease-out;
+}
+
+nav:has(:checked) #burger > .line2 {
+  transform: scaleX(0);
+}
+
+nav:not(:has(:checked)) #burger > .line2 {
+  transition-delay: 100ms;
+}
+
+nav:has(:checked) #burger > .line1 {
+  transform: rotate(45deg) translateY(4px);
+  transition-delay: 100ms;
+}
+
+nav:has(:checked) #burger > .line3 {
+  transform: rotate(-45deg) translateY(-4px);
+  transition-delay: 100ms;
+}
+
 /* HERO */
 
 header {
