@@ -1,0 +1,350 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .heading-1 {
+    font-size: 80px;
+    font-weight: 500;
+    line-height: 84px;
+    letter-spacing: -3px;
+  }
+
+  .heading-2 {
+    font-size: 72px;
+    font-weight: 500;
+    line-height: 76px;
+    letter-spacing: -2px;
+  }
+
+  .heading-3 {
+    font-size: 54px;
+    font-weight: 500;
+    line-height: 58px;
+    letter-spacing: -1px;
+  }
+
+  .heading-4 {
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 44px;
+    letter-spacing: -0.4000000059604645px;
+  }
+
+  .heading-5 {
+    font-size: 34px;
+    font-weight: 500;
+    line-height: 38px;
+    letter-spacing: -0.6000000238418579px;
+  }
+
+  .heading-6 {
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 34px;
+    letter-spacing: -0.6000000238418579px;
+  }
+
+  .heading-7 {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 28px;
+  }
+
+  .caption-1 {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+  }
+
+  .caption-1-semi {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 22px;
+  }
+
+  .body-1 {
+    font-size: 20px;
+    line-height: 32px;
+  }
+
+  .body-2 {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: center;
+  }
+
+  .body-4 {
+    font-size: 16px;
+    line-height: 26px;
+  }
+
+  .body-5 {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+  }
+
+  .hairline-1 {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 16px;
+  }
+
+  .button-m {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 32px;
+    letter-spacing: -0.4000000059604645px;
+  }
+
+  .button-s {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 24px;
+  }
+
+  .button-xs {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 24px;
+  }
+
+  .header-bg-sm {
+    background: url("../assets/hero_bg.jpeg"),
+      linear-gradient(180deg, #ffc95c 23.32%, rgba(255, 201, 92, 0) 35.19%);
+    background-blend-mode: hue;
+    background-position: center bottom;
+    background-size: 400%;
+    background-repeat: no-repeat;
+  }
+
+  .header-bg-md {
+    background: url("../assets/hero_bg.jpeg"),
+      linear-gradient(180deg, #ffc95c 23.32%, rgba(255, 201, 92, 0) 35.19%);
+    background-blend-mode: hue;
+    background-position: center bottom;
+    background-size: 280%;
+    background-repeat: no-repeat;
+  }
+
+  .header-bg {
+    background: url("../assets/hero_bg.jpeg"),
+      linear-gradient(180deg, #ffc95c 2.18%, rgba(255, 201, 92, 0) 9.71%);
+    background-position: center right 35%;
+  }
+}
+
+:root {
+  --swiper-theme-color: #ffc95c;
+  --swiper-pagination-bottom: 472px;
+  --swiper-navigation-top-offset: 80px;
+  --swiper-navigation-sides-offset: 38%;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Poppins", sans-serif;
+}
+
+.text-body-2 {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 26px;
+  text-align: left;
+}
+
+/* BANNER */
+
+.banner {
+  padding: 8px 0;
+}
+
+/* NAV */
+
+.main-nav {
+  background-color: #ffc95c;
+  background-blend-mode: normal;
+}
+
+.logo {
+  font-weight: 500;
+  line-height: 24px;
+  text-align: center;
+}
+
+/* HERO */
+
+header {
+  min-height: 820px;
+}
+
+.hero-text-container {
+  max-width: 538px;
+}
+
+/* NEW ARRIVALS */
+
+#new-arrivals {
+  padding: 48px 0px;
+}
+
+.product-card {
+  width: 262px;
+}
+
+.product-card-header {
+  background-color: #f3f5f7;
+  height: 349px;
+}
+
+.product-card-header-badges {
+  margin: 16px 16px 0;
+}
+
+.product-card-header-badge {
+  padding: 4px 14px 4px 14px;
+  background-color: #fff;
+  border-radius: 4px;
+  display: inline-block;
+}
+
+.product-card-header-favorite {
+  width: 32px;
+  height: 32px;
+  background-color: #fff;
+  border-radius: 32px;
+  padding: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 8px 16px -8px #0f0f0f1f;
+}
+
+.product-card-header img {
+  height: 80%;
+  width: 80%;
+  object-fit: cover;
+}
+
+.product-card-header-button {
+  padding: 8px 24px 8px 24px;
+  border-radius: 8px;
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 28px;
+  letter-spacing: -0.4000000059604645px;
+  text-align: center;
+  box-shadow: 0px 8px 16px 0px #00000009;
+}
+
+/* COLLECTION */
+
+#collection {
+  padding: 48px 0px 0px 0px;
+}
+
+#collection h2 {
+  margin-bottom: 48px;
+}
+
+.time {
+  width: 60px;
+  height: 60px;
+  background-color: #fefefe;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 34px;
+  font-weight: 500;
+  line-height: 38px;
+  letter-spacing: -0.6000000238418579px;
+}
+
+.time-sub {
+  font-family: Inter;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: center;
+  color: #141718;
+}
+
+.benefit-sub {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  color: #6c7275;
+}
+
+#newsletter {
+  background-image: url("../assets/newsletter-bg.jpeg");
+  background-position: top;
+  background-size: cover;
+}
+
+.footer-logo {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: center;
+  color: white;
+}
+
+.footer-sub {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  text-align: left;
+  color: #e8ecef;
+}
+
+.footer-separator-vertical {
+  height: 100%;
+  width: 1px;
+  background-color: #6c7275;
+}
+
+.footer-separator-horizontal {
+  height: 1px;
+  width: 24px;
+  background-color: #6c7275;
+}
+
+.footer-nav {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+}
+
+.copyright {
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: left;
+}
+
+.policy-terms {
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 20px;
+  text-align: left;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  content: "";
+}

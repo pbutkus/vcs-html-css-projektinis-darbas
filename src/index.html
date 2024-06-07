@@ -1,0 +1,1449 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body class="pt-[97px]">
+    <div class="fixed top-0 w-full z-50">
+      <div class="banner flex bg-[#141718] justify-center items-center gap-3">
+        <img src="assets/ticket-percent.svg" alt="" />
+        <p class="caption-1 text-white">30% off storewide — Limited time!</p>
+        <a
+          href="#"
+          class="button-xs flex items-center gap-1 border-b text-[#FFAB00] pl-1 border-[#FFAB00]"
+        >
+          Shop Now
+          <img src="assets/arrow-right.svg" alt="" />
+        </a>
+      </div>
+      <nav class="main-nav flex justify-center py-4">
+        <div class="container px-8">
+          <div class="flex justify-between">
+            <div class="flex items-center">
+              <img
+                class="block md:hidden"
+                src="assets/menu-line-horizontal.svg"
+                alt=""
+              />
+              <span class="logo text-[#141718] text-[16px] md:text-[24px]"
+                >3legant.</span
+              >
+            </div>
+            <ul class="hidden md:flex gap-10 button-xs">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Shop</a></li>
+              <li><a href="#">Product</a></li>
+              <li><a href="#">Contact Us</a></li>
+            </ul>
+            <ul class="flex gap-4">
+              <li class="hidden md:flex items-center">
+                <a href="#"><img src="assets/search 02.svg" alt="" /></a>
+              </li>
+              <li class="hidden md:flex items-center">
+                <a href="#"><img src="assets/user-circle.svg" alt="" /></a>
+              </li>
+              <li class="flex items-center">
+                <a href="#"><img src="assets/Cart Button.svg" alt="" /></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <header
+      class="flex justify-center md:items-center px-8 py-10 header-bg-sm sm:header-bg-md md:header-bg"
+    >
+      <div class="container flex justify-center md:justify-end">
+        <div
+          class="flex flex-col hero-content-container gap-7 text-center md:text-left"
+        >
+          <div class="flex flex-col hero-text-container gap-2">
+            <h1 class="heading-4 sm:heading-3 md:heading-1 text-balance">
+              Listen to
+              <br class="block sm:hidden" />
+              the
+              <span class="text-[#377DFF]">amazing</span> music sound.
+            </h1>
+            <p class="body-4 md:body-1 text-center md:text-left">
+              Experience music like never before
+            </p>
+          </div>
+          <div>
+            <button
+              class="hero-cta button-s md:button-m bg-[#141718] text-white py-2 px-14 rounded-lg"
+            >
+              Shop Now
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="flex justify-center">
+      <div class="container px-8 py-10">
+        <div class="brand-container relative flex justify-center">
+          <div class="swiper-brands overflow-hidden">
+            <div class="swiper-wrapper">
+              <div
+                class="swiper-slide w-[167px] flex items-center justify-center opacity-40 hover:opacity-100 transition duration-300"
+              >
+                <img src="assets/brand_1.png" alt="Brand 1" />
+              </div>
+              <div
+                class="swiper-slide w-[167px] flex items-center justify-center opacity-40 hover:opacity-100 transition duration-300"
+              >
+                <img src="assets/brand_2.png" alt="Brand 2" />
+              </div>
+              <div
+                class="swiper-slide w-[167px] flex items-center justify-center opacity-40 hover:opacity-100 transition duration-300"
+              >
+                <img src="assets/brand_3.png" alt="Brand 3" />
+              </div>
+              <div
+                class="swiper-slide w-[167px] flex items-center justify-center opacity-40 hover:opacity-100 transition duration-300"
+              >
+                <img src="assets/brand_4.png" alt="Brand 4" />
+              </div>
+              <div
+                class="swiper-slide w-[167px] flex items-center justify-center opacity-40 hover:opacity-100 transition duration-300"
+              >
+                <img src="assets/brand_5.png" alt="Brand 5" />
+              </div>
+              <div
+                class="swiper-slide w-[167px] flex items-center justify-center opacity-40 hover:opacity-100 transition duration-300"
+              >
+                <img src="assets/brand_6.png" alt="Brand 6" />
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-prev group">
+            <svg
+              width="15"
+              height="9"
+              viewBox="0 0 15 9"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M5.40906 0.265207C5.00324 -0.109399 4.37058 -0.0840962 3.99597 0.321722L0.765201 3.82168C0.411604 4.20474 0.4116 4.79518 0.765194 5.17824L3.99597 8.67828C4.37057 9.08411 5.00323 9.10941 5.40905 8.73481C5.81487 8.36021 5.84018 7.72755 5.46558 7.32173L3.78397 5.49997L13.5 5.49997C14.0523 5.49997 14.5 5.05225 14.5 4.49997C14.5 3.94768 14.0523 3.49997 13.5 3.49997L3.784 3.49997L5.46557 1.67829C5.84018 1.27247 5.81487 0.639813 5.40906 0.265207Z"
+                class="fill-[#6C7275] group-hover:fill-[#23262F] transition"
+              />
+            </svg>
+          </div>
+          <div class="swiper-button-next group">
+            <svg
+              width="15"
+              height="9"
+              viewBox="0 0 15 9"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M9.59094 0.265207C9.99676 -0.109399 10.6294 -0.0840962 11.004 0.321722L14.2348 3.82168C14.5884 4.20474 14.5884 4.79518 14.2348 5.17824L11.004 8.67828C10.6294 9.08411 9.99677 9.10941 9.59095 8.73481C9.18513 8.36021 9.15982 7.72755 9.53442 7.32173L11.216 5.49997L1.5 5.49997C0.947714 5.49997 0.499999 5.05225 0.499999 4.49997C0.499999 3.94768 0.947714 3.49997 1.5 3.49997L11.216 3.49997L9.53443 1.67829C9.15982 1.27247 9.18513 0.639813 9.59094 0.265207Z"
+                class="fill-[#6C7275] group-hover:fill-[#23262F] transition"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="new-arrivals" class="flex justify-center">
+      <div class="container px-8 relative">
+        <h2 class="heading-5 md:heading-4 mb-12 text-center md:text-left">
+          New arrivals
+        </h2>
+        <div>
+          <div class="swiper relative cursor-grab select-none">
+            <div class="swiper-wrapper">
+              <div
+                class="swiper-slide product-card flex flex-col gap-3 group/product-card"
+              >
+                <div class="product-card-header flex flex-col items-center">
+                  <div
+                    class="product-card-header-badges flex justify-between w-full px-4"
+                  >
+                    <div class="product-card-header-badge">NEW</div>
+                    <div
+                      class="product-card-header-favorite opacity-0 group-hover/product-card:opacity-100 transition group/heart"
+                    >
+                      <svg
+                        width="20"
+                        height="20"
+                        viewBox="0 0 20 20"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M10.577 5.76422C10.2546 6.07365 9.74548 6.07365 9.42304 5.76422L8.84604 5.2105C8.17068 4.56239 7.25832 4.16667 6.25004 4.16667C4.17897 4.16667 2.50004 5.8456 2.50004 7.91667C2.50004 9.90219 3.57486 11.5417 5.1265 12.8888C6.67947 14.237 8.53621 15.1312 9.64558 15.5876C9.87754 15.683 10.1225 15.683 10.3545 15.5876C11.4639 15.1312 13.3206 14.237 14.8736 12.8888C16.4252 11.5417 17.5 9.90218 17.5 7.91667C17.5 5.8456 15.8211 4.16667 13.75 4.16667C12.7418 4.16667 11.8294 4.56239 11.154 5.2105L10.577 5.76422ZM10 4.00798C9.0268 3.074 7.70545 2.5 6.25004 2.5C3.2585 2.5 0.833374 4.92512 0.833374 7.91667C0.833374 13.2235 6.64199 16.1542 9.01153 17.1289C9.64968 17.3914 10.3504 17.3914 10.9885 17.1289C13.3581 16.1542 19.1667 13.2235 19.1667 7.91667C19.1667 4.92512 16.7416 2.5 13.75 2.5C12.2946 2.5 10.9733 3.074 10 4.00798Z"
+                          fill="#6C7275"
+                          class="group-hover/heart:fill-red-500"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                  <img src="assets/crusher_anc.png" alt="" />
+                  <div
+                    class="w-full px-4 pb-4 opacity-0 group-hover/product-card:opacity-100 transition"
+                  >
+                    <button
+                      class="product-card-header-button bg-[#141718] w-full"
+                    >
+                      Add to cart
+                    </button>
+                  </div>
+                </div>
+                <div class="product-content flex flex-col gap-1">
+                  <div class="stars flex gap-[2px]">
+                    <img src="assets/Star Fill.svg" alt="" />
+                    <img src="assets/Star Fill.svg" alt="" />
+                    <img src="assets/Star Fill.svg" alt="" />
+                    <img src="assets/Star Fill.svg" alt="" />
+                    <img src="assets/Star Fill.svg" alt="" />
+                  </div>
+                  <p class="text-body-2">
+                    Skullcandy - Crusher anc 2 wireless headphones
+                  </p>
+                  <p class="caption-1 text-[#121212]">$299.99</p>
+                </div>
+              </div>
+              <div
+                class="swiper-slide product-card flex flex-col gap-3 group/product-card"
+              >
+                <div class="product-card-header flex flex-col items-center">
+                  <div
+                    class="product-card-header-badges flex justify-between w-full px-4"
+                  >
+                    <div class="product-card-header-badge">NEW</div>
+                    <div
+                      class="product-card-header-favorite opacity-0 group-hover/product-card:opacity-100 transition group/heart"
+                    >
+                      <svg
+                        width="20"
+                        height="20"
+                        viewBox="0 0 20 20"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M10.577 5.76422C10.2546 6.07365 9.74548 6.07365 9.42304 5.76422L8.84604 5.2105C8.17068 4.56239 7.25832 4.16667 6.25004 4.16667C4.17897 4.16667 2.50004 5.8456 2.50004 7.91667C2.50004 9.90219 3.57486 11.5417 5.1265 12.8888C6.67947 14.237 8.53621 15.1312 9.64558 15.5876C9.87754 15.683 10.1225 15.683 10.3545 15.5876C11.4639 15.1312 13.3206 14.237 14.8736 12.8888C16.4252 11.5417 17.5 9.90218 17.5 7.91667C17.5 5.8456 15.8211 4.16667 13.75 4.16667C12.7418 4.16667 11.8294 4.56239 11.154 5.2105L10.577 5.76422ZM10 4.00798C9.0268 3.074 7.70545 2.5 6.25004 2.5C3.2585 2.5 0.833374 4.92512 0.833374 7.91667C0.833374 13.2235 6.64199 16.1542 9.01153 17.1289C9.64968 17.3914 10.3504 17.3914 10.9885 17.1289C13.3581 16.1542 19.1667 13.2235 19.1667 7.91667C19.1667 4.92512 16.7416 2.5 13.75 2.5C12.2946 2.5 10.9733 3.074 10 4.00798Z"
+                          fill="#6C7275"
+                          class="group-hover/heart:fill-red-500"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                  <img src="assets/beats-studio.png" alt="" />
+                  <div
+                    class="w-full px-4 pb-4 opacity-0 group-hover/product-card:opacity-100 transition"
+                  >
+                    <button
+                      class="product-card-header-button bg-[#141718] w-full"
+                    >
+                      Add to cart
+                    </button>
+                  </div>
+                </div>
+                <div class="product-content flex flex-col gap-1">
+                  <div class="stars flex gap-[2px]">
+                    <img src="assets/Star Fill.svg" alt="" />
+                    <img src="assets/Star Fill.svg" alt="" />
+                    <img src="assets/Star Fill.svg" alt="" />
+                    <img src="assets/Star Fill.svg" alt="" />
+                    <img src="assets/Star Fill.svg" alt="" />
+                  </div>
+                  <p class="text-body-2">
+                    Beats <br />
+                    Studio Pro
+                  </p>
+                  <p class="caption-1 text-[#121212]">$349.99</p>
+                </div>
+              </div>
+              <div
+                class="swiper-slide product-card flex flex-col gap-3 group/product-card"
+              >
+                <div class="product-card-header flex flex-col items-center">
+                  <div
+                    class="product-card-header-badges flex justify-between w-full px-4"
+                  >
+                    <div class="product-card-header-badge">NEW</div>
+                    <div
+                      class="product-card-header-favorite opacity-0 group-hover/product-card:opacity-100 transition group/heart"
+                    >
+                      <svg
+                        width="20"
+                        height="20"
+                        viewBox="0 0 20 20"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M10.577 5.76422C10.2546 6.07365 9.74548 6.07365 9.42304 5.76422L8.84604 5.2105C8.17068 4.56239 7.25832 4.16667 6.25004 4.16667C4.17897 4.16667 2.50004 5.8456 2.50004 7.91667C2.50004 9.90219 3.57486 11.5417 5.1265 12.8888C6.67947 14.237 8.53621 15.1312 9.64558 15.5876C9.87754 15.683 10.1225 15.683 10.3545 15.5876C11.4639 15.1312 13.3206 14.237 14.8736 12.8888C16.4252 11.5417 17.5 9.90218 17.5 7.91667C17.5 5.8456 15.8211 4.16667 13.75 4.16667C12.7418 4.16667 11.8294 4.56239 11.154 5.2105L10.577 5.76422ZM10 4.00798C9.0268 3.074 7.70545 2.5 6.25004 2.5C3.2585 2.5 0.833374 4.92512 0.833374 7.91667C0.833374 13.2235 6.64199 16.1542 9.01153 17.1289C9.64968 17.3914 10.3504 17.3914 10.9885 17.1289C13.3581 16.1542 19.1667 13.2235 19.1667 7.91667C19.1667 4.92512 16.7416 2.5 13.75 2.5C12.2946 2.5 10.9733 3.074 10 4.00798Z"
+                          fill="#6C7275"
+                          class="group-hover/heart:fill-red-500"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                  <img src="assets/sony-wh.png" alt="" />
+                  <div
+                    class="w-full px-4 pb-4 opacity-0 group-hover/product-card:opacity-100 transition"
+                  >
+                    <button
+                      class="product-card-header-button bg-[#141718] w-full"
+                    >
+                      Add to cart
+                    </button>
+                  </div>
+                </div>
+                <div class="product-content flex flex-col gap-1">
+                  <div class="stars flex gap-[2px]">
+                    <img src="assets/Star Fill.svg" alt="" />
+                    <img src="assets/Star Fill.svg" alt="" />
+                    <img src="assets/Star Fill.svg" alt="" />
+                    <img src="assets/Star Fill.svg" alt="" />
+                    <img src="assets/Star Fill.svg" alt="" />
+                  </div>
+                  <p class="text-body-2">
+                    Sony - WH-CH720N Wireless Noise Canceling
+                  </p>
+                  <p class="caption-1 text-[#121212]">$149.99</p>
+                </div>
+              </div>
+              <div
+                class="swiper-slide product-card flex flex-col gap-3 group/product-card"
+              >
+                <div class="product-card-header flex flex-col items-center">
+                  <div
+                    class="product-card-header-badges flex justify-between w-full px-4"
+                  >
+                    <div class="product-card-header-badge">NEW</div>
+                    <div
+                      class="product-card-header-favorite opacity-0 group-hover/product-card:opacity-100 transition group/heart"
+                    >
+                      <svg
+                        width="20"
+                        height="20"
+                        viewBox="0 0 20 20"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M10.577 5.76422C10.2546 6.07365 9.74548 6.07365 9.42304 5.76422L8.84604 5.2105C8.17068 4.56239 7.25832 4.16667 6.25004 4.16667C4.17897 4.16667 2.50004 5.8456 2.50004 7.91667C2.50004 9.90219 3.57486 11.5417 5.1265 12.8888C6.67947 14.237 8.53621 15.1312 9.64558 15.5876C9.87754 15.683 10.1225 15.683 10.3545 15.5876C11.4639 15.1312 13.3206 14.237 14.8736 12.8888C16.4252 11.5417 17.5 9.90218 17.5 7.91667C17.5 5.8456 15.8211 4.16667 13.75 4.16667C12.7418 4.16667 11.8294 4.56239 11.154 5.2105L10.577 5.76422ZM10 4.00798C9.0268 3.074 7.70545 2.5 6.25004 2.5C3.2585 2.5 0.833374 4.92512 0.833374 7.91667C0.833374 13.2235 6.64199 16.1542 9.01153 17.1289C9.64968 17.3914 10.3504 17.3914 10.9885 17.1289C13.3581 16.1542 19.1667 13.2235 19.1667 7.91667C19.1667 4.92512 16.7416 2.5 13.75 2.5C12.2946 2.5 10.9733 3.074 10 4.00798Z"
+                          fill="#6C7275"
+                          class="group-hover/heart:fill-red-500"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                  <img src="assets/rail.png" alt="" />
+                  <div
+                    class="w-full px-4 pb-4 opacity-0 group-hover/product-card:opacity-100 transition"
+                  >
+                    <button
+                      class="product-card-header-button bg-[#141718] w-full"
+                    >
+                      Add to cart
+                    </button>
+                  </div>
+                </div>
+                <div class="product-content flex flex-col gap-1">
+                  <div class="stars flex gap-[2px]">
+                    <img src="assets/Star Fill.svg" alt="" />
+                    <img src="assets/Star Fill.svg" alt="" />
+                    <img src="assets/Star Fill.svg" alt="" />
+                    <img src="assets/Star Fill.svg" alt="" />
+                    <img src="assets/Star Fill.svg" alt="" />
+                  </div>
+                  <p class="text-body-2">
+                    Skullcandy - Rail True Wireless Earbuds
+                  </p>
+                  <p class="caption-1 text-[#121212]">$79.99</p>
+                </div>
+              </div>
+              <div
+                class="swiper-slide product-card flex flex-col gap-3 group/product-card"
+              >
+                <div class="product-card-header flex flex-col items-center">
+                  <div
+                    class="product-card-header-badges flex justify-between w-full px-4"
+                  >
+                    <div class="product-card-header-badge">NEW</div>
+                    <div
+                      class="product-card-header-favorite opacity-0 group-hover/product-card:opacity-100 transition group/heart"
+                    >
+                      <svg
+                        width="20"
+                        height="20"
+                        viewBox="0 0 20 20"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M10.577 5.76422C10.2546 6.07365 9.74548 6.07365 9.42304 5.76422L8.84604 5.2105C8.17068 4.56239 7.25832 4.16667 6.25004 4.16667C4.17897 4.16667 2.50004 5.8456 2.50004 7.91667C2.50004 9.90219 3.57486 11.5417 5.1265 12.8888C6.67947 14.237 8.53621 15.1312 9.64558 15.5876C9.87754 15.683 10.1225 15.683 10.3545 15.5876C11.4639 15.1312 13.3206 14.237 14.8736 12.8888C16.4252 11.5417 17.5 9.90218 17.5 7.91667C17.5 5.8456 15.8211 4.16667 13.75 4.16667C12.7418 4.16667 11.8294 4.56239 11.154 5.2105L10.577 5.76422ZM10 4.00798C9.0268 3.074 7.70545 2.5 6.25004 2.5C3.2585 2.5 0.833374 4.92512 0.833374 7.91667C0.833374 13.2235 6.64199 16.1542 9.01153 17.1289C9.64968 17.3914 10.3504 17.3914 10.9885 17.1289C13.3581 16.1542 19.1667 13.2235 19.1667 7.91667C19.1667 4.92512 16.7416 2.5 13.75 2.5C12.2946 2.5 10.9733 3.074 10 4.00798Z"
+                          fill="#6C7275"
+                          class="group-hover/heart:fill-red-500"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                  <img src="assets/fitpro.png" alt="Beats Buds" />
+                  <div
+                    class="w-full px-4 pb-4 opacity-0 group-hover/product-card:opacity-100 transition"
+                  >
+                    <button
+                      class="product-card-header-button bg-[#141718] w-full"
+                    >
+                      Add to cart
+                    </button>
+                  </div>
+                </div>
+                <div class="product-content flex flex-col gap-1">
+                  <div class="stars flex gap-[2px]">
+                    <img src="assets/Star Fill.svg" alt="" />
+                    <img src="assets/Star Fill.svg" alt="" />
+                    <img src="assets/Star Fill.svg" alt="" />
+                    <img src="assets/Star Fill.svg" alt="" />
+                    <img src="assets/Star Fill.svg" alt="" />
+                  </div>
+                  <p class="text-body-2">
+                    Beats
+                    <br />
+                    Studio Pro
+                  </p>
+                  <p class="caption-1 text-[#121212]">$249.99</p>
+                </div>
+              </div>
+              <div
+                class="swiper-slide product-card flex flex-col gap-3 group/product-card"
+              >
+                <div class="product-card-header flex flex-col items-center">
+                  <div
+                    class="product-card-header-badges flex justify-between w-full px-4"
+                  >
+                    <div class="product-card-header-badge">NEW</div>
+                    <div
+                      class="product-card-header-favorite opacity-0 group-hover/product-card:opacity-100 transition group/heart"
+                    >
+                      <svg
+                        width="20"
+                        height="20"
+                        viewBox="0 0 20 20"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M10.577 5.76422C10.2546 6.07365 9.74548 6.07365 9.42304 5.76422L8.84604 5.2105C8.17068 4.56239 7.25832 4.16667 6.25004 4.16667C4.17897 4.16667 2.50004 5.8456 2.50004 7.91667C2.50004 9.90219 3.57486 11.5417 5.1265 12.8888C6.67947 14.237 8.53621 15.1312 9.64558 15.5876C9.87754 15.683 10.1225 15.683 10.3545 15.5876C11.4639 15.1312 13.3206 14.237 14.8736 12.8888C16.4252 11.5417 17.5 9.90218 17.5 7.91667C17.5 5.8456 15.8211 4.16667 13.75 4.16667C12.7418 4.16667 11.8294 4.56239 11.154 5.2105L10.577 5.76422ZM10 4.00798C9.0268 3.074 7.70545 2.5 6.25004 2.5C3.2585 2.5 0.833374 4.92512 0.833374 7.91667C0.833374 13.2235 6.64199 16.1542 9.01153 17.1289C9.64968 17.3914 10.3504 17.3914 10.9885 17.1289C13.3581 16.1542 19.1667 13.2235 19.1667 7.91667C19.1667 4.92512 16.7416 2.5 13.75 2.5C12.2946 2.5 10.9733 3.074 10 4.00798Z"
+                          fill="#6C7275"
+                          class="group-hover/heart:fill-red-500"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                  <img src="assets/jbl_buds.png" alt="JBL Buds" />
+                  <div
+                    class="w-full px-4 pb-4 opacity-0 group-hover/product-card:opacity-100 transition"
+                  >
+                    <button
+                      class="product-card-header-button bg-[#141718] w-full"
+                    >
+                      Add to cart
+                    </button>
+                  </div>
+                </div>
+                <div class="product-content flex flex-col gap-1">
+                  <div class="stars flex gap-[2px]">
+                    <img src="assets/Star Fill.svg" alt="" />
+                    <img src="assets/Star Fill.svg" alt="" />
+                    <img src="assets/Star Fill.svg" alt="" />
+                    <img src="assets/Star Fill.svg" alt="" />
+                    <img src="assets/Star Fill.svg" alt="" />
+                  </div>
+                  <p class="text-body-2">
+                    JBL Reflect Flow Pro+ Bluetooth Truly Wireless Sports
+                  </p>
+                  <p class="caption-1 text-[#121212]">$179.95</p>
+                </div>
+              </div>
+              <div
+                class="swiper-slide product-card flex flex-col gap-3 group/product-card"
+              >
+                <div class="product-card-header flex flex-col items-center">
+                  <div
+                    class="product-card-header-badges flex justify-between w-full px-4"
+                  >
+                    <div class="product-card-header-badge">NEW</div>
+                    <div
+                      class="product-card-header-favorite opacity-0 group-hover/product-card:opacity-100 transition group/heart"
+                    >
+                      <svg
+                        width="20"
+                        height="20"
+                        viewBox="0 0 20 20"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M10.577 5.76422C10.2546 6.07365 9.74548 6.07365 9.42304 5.76422L8.84604 5.2105C8.17068 4.56239 7.25832 4.16667 6.25004 4.16667C4.17897 4.16667 2.50004 5.8456 2.50004 7.91667C2.50004 9.90219 3.57486 11.5417 5.1265 12.8888C6.67947 14.237 8.53621 15.1312 9.64558 15.5876C9.87754 15.683 10.1225 15.683 10.3545 15.5876C11.4639 15.1312 13.3206 14.237 14.8736 12.8888C16.4252 11.5417 17.5 9.90218 17.5 7.91667C17.5 5.8456 15.8211 4.16667 13.75 4.16667C12.7418 4.16667 11.8294 4.56239 11.154 5.2105L10.577 5.76422ZM10 4.00798C9.0268 3.074 7.70545 2.5 6.25004 2.5C3.2585 2.5 0.833374 4.92512 0.833374 7.91667C0.833374 13.2235 6.64199 16.1542 9.01153 17.1289C9.64968 17.3914 10.3504 17.3914 10.9885 17.1289C13.3581 16.1542 19.1667 13.2235 19.1667 7.91667C19.1667 4.92512 16.7416 2.5 13.75 2.5C12.2946 2.5 10.9733 3.074 10 4.00798Z"
+                          fill="#6C7275"
+                          class="group-hover/heart:fill-red-500"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                  <img src="assets/bose_qc.png" alt="Bose Headphones" />
+                  <div
+                    class="w-full px-4 pb-4 opacity-0 group-hover/product-card:opacity-100 transition"
+                  >
+                    <button
+                      class="product-card-header-button bg-[#141718] w-full"
+                    >
+                      Add to cart
+                    </button>
+                  </div>
+                </div>
+                <div class="product-content flex flex-col gap-1">
+                  <div class="stars flex gap-[2px]">
+                    <img src="assets/Star Fill.svg" alt="" />
+                    <img src="assets/Star Fill.svg" alt="" />
+                    <img src="assets/Star Fill.svg" alt="" />
+                    <img src="assets/Star Fill.svg" alt="" />
+                    <img src="assets/Star Fill.svg" alt="" />
+                  </div>
+                  <p class="text-body-2">
+                    Bose
+                    <br />
+                    QuietComfort Headphones
+                  </p>
+                  <p class="caption-1 text-[#121212]">$349.99</p>
+                </div>
+              </div>
+              <div
+                class="swiper-slide product-card flex flex-col gap-3 group/product-card"
+              >
+                <div class="product-card-header flex flex-col items-center">
+                  <div
+                    class="product-card-header-badges flex justify-between w-full px-4"
+                  >
+                    <div class="product-card-header-badge">NEW</div>
+                    <div
+                      class="product-card-header-favorite opacity-0 group-hover/product-card:opacity-100 transition group/heart"
+                    >
+                      <svg
+                        width="20"
+                        height="20"
+                        viewBox="0 0 20 20"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M10.577 5.76422C10.2546 6.07365 9.74548 6.07365 9.42304 5.76422L8.84604 5.2105C8.17068 4.56239 7.25832 4.16667 6.25004 4.16667C4.17897 4.16667 2.50004 5.8456 2.50004 7.91667C2.50004 9.90219 3.57486 11.5417 5.1265 12.8888C6.67947 14.237 8.53621 15.1312 9.64558 15.5876C9.87754 15.683 10.1225 15.683 10.3545 15.5876C11.4639 15.1312 13.3206 14.237 14.8736 12.8888C16.4252 11.5417 17.5 9.90218 17.5 7.91667C17.5 5.8456 15.8211 4.16667 13.75 4.16667C12.7418 4.16667 11.8294 4.56239 11.154 5.2105L10.577 5.76422ZM10 4.00798C9.0268 3.074 7.70545 2.5 6.25004 2.5C3.2585 2.5 0.833374 4.92512 0.833374 7.91667C0.833374 13.2235 6.64199 16.1542 9.01153 17.1289C9.64968 17.3914 10.3504 17.3914 10.9885 17.1289C13.3581 16.1542 19.1667 13.2235 19.1667 7.91667C19.1667 4.92512 16.7416 2.5 13.75 2.5C12.2946 2.5 10.9733 3.074 10 4.00798Z"
+                          fill="#6C7275"
+                          class="group-hover/heart:fill-red-500"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                  <img src="assets/akg.png" alt="AKG Headphones" />
+                  <div
+                    class="w-full px-4 pb-4 opacity-0 group-hover/product-card:opacity-100 transition"
+                  >
+                    <button
+                      class="product-card-header-button bg-[#141718] w-full"
+                    >
+                      Add to cart
+                    </button>
+                  </div>
+                </div>
+                <div class="product-content flex flex-col gap-1">
+                  <div class="stars flex gap-[2px]">
+                    <img src="assets/Star Fill.svg" alt="" />
+                    <img src="assets/Star Fill.svg" alt="" />
+                    <img src="assets/Star Fill.svg" alt="" />
+                    <img src="assets/Star Fill.svg" alt="" />
+                    <img src="assets/Star Fill.svg" alt="" />
+                  </div>
+                  <p class="text-body-2">
+                    AKG
+                    <br />
+                    Y600NC Wireless
+                  </p>
+                  <p class="caption-1 text-[#121212]">$349.99</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+    <div id="collection" class="flex justify-center">
+      <div class="container px-8">
+        <h2 class="heading-5 md:heading-4 text-center md:text-left">
+          Shop Collection
+        </h2>
+        <div class="grid md:grid-cols-2 gap-6">
+          <a
+            href="#"
+            class="md:row-span-2 flex flex-col justify-end md:justify-normal bg-[#f3f5f7] h-[280px] md:h-[623px] relative overflow-hidden group"
+          >
+            <img
+              class="object-cover h-full mt-10 ml-10 absolute -right-20 md:right-0 md:static"
+              src="assets/sony-xm5.png"
+              alt=""
+            />
+            <div class="flex flex-col gap-3 m-10 z-10">
+              <h5 class="heading-6 md:heading-5">Headband</h5>
+              <div class="flex gap-1 items-center">
+                <span>Collection</span>
+                <div class="group-hover:translate-x-1 transition-transform">
+                  <svg
+                    width="18"
+                    height="18"
+                    viewBox="0 0 18 18"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M3.75 9H14.25"
+                      stroke="#121212"
+                      stroke-width="1.125"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M9.75 13.5L14.25 9"
+                      stroke="#121212"
+                      stroke-width="1.125"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M9.75 4.5L14.25 9"
+                      stroke="#121212"
+                      stroke-width="1.125"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a
+            href="#"
+            class="flex bg-[#f3f5f7] items-end h-[280px] md:[319px] relative overflow-hidden group"
+          >
+            <div class="flex flex-col gap-3 m-10 z-10">
+              <h3 class="heading-6 md:heading-5">Earbuds</h3>
+              <div class="flex gap-1 items-center">
+                <span>Collection</span>
+                <div class="group-hover:translate-x-1 transition-transform">
+                  <svg
+                    width="18"
+                    height="18"
+                    viewBox="0 0 18 18"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M3.75 9H14.25"
+                      stroke="#121212"
+                      stroke-width="1.125"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M9.75 13.5L14.25 9"
+                      stroke="#121212"
+                      stroke-width="1.125"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M9.75 4.5L14.25 9"
+                      stroke="#121212"
+                      stroke-width="1.125"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <img
+              class="object-cover h-full absolute md:right-4 -right-8"
+              src="assets/beats-buds.png"
+              alt=""
+            />
+          </a>
+          <a
+            href="#"
+            class="flex relative bg-[#f3f5f7] items-end h-[280px] md:h-[319px] overflow-hidden group"
+          >
+            <div class="flex flex-col gap-3 m-10 z-10">
+              <h5 class="heading-6 md:heading-5">Accessories</h5>
+              <div class="flex gap-1 items-center">
+                <span>Collection</span>
+                <div class="group-hover:translate-x-1 transition-transform">
+                  <svg
+                    width="18"
+                    height="18"
+                    viewBox="0 0 18 18"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M3.75 9H14.25"
+                      stroke="#121212"
+                      stroke-width="1.125"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M9.75 13.5L14.25 9"
+                      stroke="#121212"
+                      stroke-width="1.125"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M9.75 4.5L14.25 9"
+                      stroke="#121212"
+                      stroke-width="1.125"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <img
+              class="object-cover h-full absolute md:right-4 -right-8"
+              src="assets/usb-c.png"
+              alt=""
+            />
+          </a>
+        </div>
+      </div>
+    </div>
+    <div id="best-sellers" class="flex justify-center mt-12 mb-[100px]">
+      <div class="container px-8">
+        <h2 class="heading-5 md:heading-4 text-center md:text-left mb-12">
+          Best Seller
+        </h2>
+        <div class="grid grid-cols-2 lg:grid-cols-4 gap-[24px]">
+          <div
+            class="bestseller-card flex flex-col gap-3 group/product-card w-full"
+          >
+            <div
+              class="bestseller-card-header flex flex-col items-center bg-[#F3F5F7]"
+            >
+              <div
+                class="product-card-header-badges flex justify-between w-full px-4"
+              >
+                <div class="product-card-header-badge">HOT</div>
+                <div
+                  class="product-card-header-favorite opacity-0 group-hover/product-card:opacity-100 transition group/heart"
+                >
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M10.577 5.76422C10.2546 6.07365 9.74548 6.07365 9.42304 5.76422L8.84604 5.2105C8.17068 4.56239 7.25832 4.16667 6.25004 4.16667C4.17897 4.16667 2.50004 5.8456 2.50004 7.91667C2.50004 9.90219 3.57486 11.5417 5.1265 12.8888C6.67947 14.237 8.53621 15.1312 9.64558 15.5876C9.87754 15.683 10.1225 15.683 10.3545 15.5876C11.4639 15.1312 13.3206 14.237 14.8736 12.8888C16.4252 11.5417 17.5 9.90218 17.5 7.91667C17.5 5.8456 15.8211 4.16667 13.75 4.16667C12.7418 4.16667 11.8294 4.56239 11.154 5.2105L10.577 5.76422ZM10 4.00798C9.0268 3.074 7.70545 2.5 6.25004 2.5C3.2585 2.5 0.833374 4.92512 0.833374 7.91667C0.833374 13.2235 6.64199 16.1542 9.01153 17.1289C9.64968 17.3914 10.3504 17.3914 10.9885 17.1289C13.3581 16.1542 19.1667 13.2235 19.1667 7.91667C19.1667 4.92512 16.7416 2.5 13.75 2.5C12.2946 2.5 10.9733 3.074 10 4.00798Z"
+                      fill="#6C7275"
+                      class="group-hover/heart:fill-red-500"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <img src="assets/crusher_anc.png" alt="" />
+              <div
+                class="w-full px-4 pb-4 opacity-0 group-hover/product-card:opacity-100 transition"
+              >
+                <button class="product-card-header-button bg-[#141718] w-full">
+                  Add to cart
+                </button>
+              </div>
+            </div>
+            <div class="product-content flex flex-col gap-1">
+              <div class="stars flex gap-[2px]">
+                <img src="assets/Star Fill.svg" alt="" />
+                <img src="assets/Star Fill.svg" alt="" />
+                <img src="assets/Star Fill.svg" alt="" />
+                <img src="assets/Star Fill.svg" alt="" />
+                <img src="assets/Star Fill.svg" alt="" />
+              </div>
+              <p class="text-body-2">
+                Skullcandy - Crusher anc 2 wireless headphones
+              </p>
+              <p class="caption-1 text-[#121212]">$299.99</p>
+            </div>
+          </div>
+          <div
+            class="bestseller-card flex flex-col gap-3 group/product-card w-full"
+          >
+            <div
+              class="bestseller-card-header flex flex-col items-center bg-[#F3F5F7]"
+            >
+              <div
+                class="product-card-header-badges flex justify-between w-full px-4"
+              >
+                <div class="product-card-header-badge">HOT</div>
+                <div
+                  class="product-card-header-favorite opacity-0 group-hover/product-card:opacity-100 transition group/heart"
+                >
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M10.577 5.76422C10.2546 6.07365 9.74548 6.07365 9.42304 5.76422L8.84604 5.2105C8.17068 4.56239 7.25832 4.16667 6.25004 4.16667C4.17897 4.16667 2.50004 5.8456 2.50004 7.91667C2.50004 9.90219 3.57486 11.5417 5.1265 12.8888C6.67947 14.237 8.53621 15.1312 9.64558 15.5876C9.87754 15.683 10.1225 15.683 10.3545 15.5876C11.4639 15.1312 13.3206 14.237 14.8736 12.8888C16.4252 11.5417 17.5 9.90218 17.5 7.91667C17.5 5.8456 15.8211 4.16667 13.75 4.16667C12.7418 4.16667 11.8294 4.56239 11.154 5.2105L10.577 5.76422ZM10 4.00798C9.0268 3.074 7.70545 2.5 6.25004 2.5C3.2585 2.5 0.833374 4.92512 0.833374 7.91667C0.833374 13.2235 6.64199 16.1542 9.01153 17.1289C9.64968 17.3914 10.3504 17.3914 10.9885 17.1289C13.3581 16.1542 19.1667 13.2235 19.1667 7.91667C19.1667 4.92512 16.7416 2.5 13.75 2.5C12.2946 2.5 10.9733 3.074 10 4.00798Z"
+                      fill="#6C7275"
+                      class="group-hover/heart:fill-red-500"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <img src="assets/beats-studio.png" alt="" />
+              <div
+                class="w-full px-4 pb-4 opacity-0 group-hover/product-card:opacity-100 transition"
+              >
+                <button class="product-card-header-button bg-[#141718] w-full">
+                  Add to cart
+                </button>
+              </div>
+            </div>
+            <div class="product-content flex flex-col gap-1">
+              <div class="stars flex gap-[2px]">
+                <img src="assets/Star Fill.svg" alt="" />
+                <img src="assets/Star Fill.svg" alt="" />
+                <img src="assets/Star Fill.svg" alt="" />
+                <img src="assets/Star Fill.svg" alt="" />
+                <img src="assets/Star Fill.svg" alt="" />
+              </div>
+              <p class="text-body-2">
+                Beats
+                <br />
+                Studio Pro
+              </p>
+              <p class="caption-1 text-[#121212]">$349.99</p>
+            </div>
+          </div>
+          <div
+            class="bestseller-card flex flex-col gap-3 group/product-card w-full"
+          >
+            <div
+              class="bestseller-card-header flex flex-col items-center bg-[#F3F5F7]"
+            >
+              <div
+                class="product-card-header-badges flex justify-between w-full px-4"
+              >
+                <div class="product-card-header-badge">HOT</div>
+                <div
+                  class="product-card-header-favorite opacity-0 group-hover/product-card:opacity-100 transition group/heart"
+                >
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M10.577 5.76422C10.2546 6.07365 9.74548 6.07365 9.42304 5.76422L8.84604 5.2105C8.17068 4.56239 7.25832 4.16667 6.25004 4.16667C4.17897 4.16667 2.50004 5.8456 2.50004 7.91667C2.50004 9.90219 3.57486 11.5417 5.1265 12.8888C6.67947 14.237 8.53621 15.1312 9.64558 15.5876C9.87754 15.683 10.1225 15.683 10.3545 15.5876C11.4639 15.1312 13.3206 14.237 14.8736 12.8888C16.4252 11.5417 17.5 9.90218 17.5 7.91667C17.5 5.8456 15.8211 4.16667 13.75 4.16667C12.7418 4.16667 11.8294 4.56239 11.154 5.2105L10.577 5.76422ZM10 4.00798C9.0268 3.074 7.70545 2.5 6.25004 2.5C3.2585 2.5 0.833374 4.92512 0.833374 7.91667C0.833374 13.2235 6.64199 16.1542 9.01153 17.1289C9.64968 17.3914 10.3504 17.3914 10.9885 17.1289C13.3581 16.1542 19.1667 13.2235 19.1667 7.91667C19.1667 4.92512 16.7416 2.5 13.75 2.5C12.2946 2.5 10.9733 3.074 10 4.00798Z"
+                      fill="#6C7275"
+                      class="group-hover/heart:fill-red-500"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <img src="assets/sony-wh.png" alt="" />
+              <div
+                class="w-full px-4 pb-4 opacity-0 group-hover/product-card:opacity-100 transition"
+              >
+                <button class="product-card-header-button bg-[#141718] w-full">
+                  Add to cart
+                </button>
+              </div>
+            </div>
+            <div class="product-content flex flex-col gap-1">
+              <div class="stars flex gap-[2px]">
+                <img src="assets/Star Fill.svg" alt="" />
+                <img src="assets/Star Fill.svg" alt="" />
+                <img src="assets/Star Fill.svg" alt="" />
+                <img src="assets/Star Fill.svg" alt="" />
+                <img src="assets/Star Fill.svg" alt="" />
+              </div>
+              <p class="text-body-2">
+                Sony - WH-CH720N Wireless Noise Canceling
+              </p>
+              <p class="caption-1 text-[#121212]">$149.99</p>
+            </div>
+          </div>
+          <div
+            class="bestseller-card flex flex-col gap-3 group/product-card w-full"
+          >
+            <div
+              class="bestseller-card-header flex flex-col items-center bg-[#F3F5F7]"
+            >
+              <div
+                class="product-card-header-badges flex justify-between w-full px-4"
+              >
+                <div class="product-card-header-badge">HOT</div>
+                <div
+                  class="product-card-header-favorite opacity-0 group-hover/product-card:opacity-100 transition group/heart"
+                >
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M10.577 5.76422C10.2546 6.07365 9.74548 6.07365 9.42304 5.76422L8.84604 5.2105C8.17068 4.56239 7.25832 4.16667 6.25004 4.16667C4.17897 4.16667 2.50004 5.8456 2.50004 7.91667C2.50004 9.90219 3.57486 11.5417 5.1265 12.8888C6.67947 14.237 8.53621 15.1312 9.64558 15.5876C9.87754 15.683 10.1225 15.683 10.3545 15.5876C11.4639 15.1312 13.3206 14.237 14.8736 12.8888C16.4252 11.5417 17.5 9.90218 17.5 7.91667C17.5 5.8456 15.8211 4.16667 13.75 4.16667C12.7418 4.16667 11.8294 4.56239 11.154 5.2105L10.577 5.76422ZM10 4.00798C9.0268 3.074 7.70545 2.5 6.25004 2.5C3.2585 2.5 0.833374 4.92512 0.833374 7.91667C0.833374 13.2235 6.64199 16.1542 9.01153 17.1289C9.64968 17.3914 10.3504 17.3914 10.9885 17.1289C13.3581 16.1542 19.1667 13.2235 19.1667 7.91667C19.1667 4.92512 16.7416 2.5 13.75 2.5C12.2946 2.5 10.9733 3.074 10 4.00798Z"
+                      fill="#6C7275"
+                      class="group-hover/heart:fill-red-500"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <img src="assets/rail.png" alt="" />
+              <div
+                class="w-full px-4 pb-4 opacity-0 group-hover/product-card:opacity-100 transition"
+              >
+                <button class="product-card-header-button bg-[#141718] w-full">
+                  Add to cart
+                </button>
+              </div>
+            </div>
+            <div class="product-content flex flex-col gap-1">
+              <div class="stars flex gap-[2px]">
+                <img src="assets/Star Fill.svg" alt="" />
+                <img src="assets/Star Fill.svg" alt="" />
+                <img src="assets/Star Fill.svg" alt="" />
+                <img src="assets/Star Fill.svg" alt="" />
+                <img src="assets/Star Fill.svg" alt="" />
+              </div>
+              <p class="text-body-2">
+                Skullcandy - Rail True Wireless
+                <br />
+                Earbuds
+              </p>
+              <p class="caption-1 text-[#121212]">$79.99</p>
+            </div>
+          </div>
+          <div
+            class="bestseller-card flex flex-col gap-3 group/product-card w-full"
+          >
+            <div
+              class="bestseller-card-header flex flex-col items-center bg-[#F3F5F7]"
+            >
+              <div
+                class="product-card-header-badges flex justify-between w-full px-4"
+              >
+                <div class="product-card-header-badge">HOT</div>
+                <div
+                  class="product-card-header-favorite opacity-0 group-hover/product-card:opacity-100 transition group/heart"
+                >
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M10.577 5.76422C10.2546 6.07365 9.74548 6.07365 9.42304 5.76422L8.84604 5.2105C8.17068 4.56239 7.25832 4.16667 6.25004 4.16667C4.17897 4.16667 2.50004 5.8456 2.50004 7.91667C2.50004 9.90219 3.57486 11.5417 5.1265 12.8888C6.67947 14.237 8.53621 15.1312 9.64558 15.5876C9.87754 15.683 10.1225 15.683 10.3545 15.5876C11.4639 15.1312 13.3206 14.237 14.8736 12.8888C16.4252 11.5417 17.5 9.90218 17.5 7.91667C17.5 5.8456 15.8211 4.16667 13.75 4.16667C12.7418 4.16667 11.8294 4.56239 11.154 5.2105L10.577 5.76422ZM10 4.00798C9.0268 3.074 7.70545 2.5 6.25004 2.5C3.2585 2.5 0.833374 4.92512 0.833374 7.91667C0.833374 13.2235 6.64199 16.1542 9.01153 17.1289C9.64968 17.3914 10.3504 17.3914 10.9885 17.1289C13.3581 16.1542 19.1667 13.2235 19.1667 7.91667C19.1667 4.92512 16.7416 2.5 13.75 2.5C12.2946 2.5 10.9733 3.074 10 4.00798Z"
+                      fill="#6C7275"
+                      class="group-hover/heart:fill-red-500"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <img src="assets/fitpro.png" alt="" />
+              <div
+                class="w-full px-4 pb-4 opacity-0 group-hover/product-card:opacity-100 transition"
+              >
+                <button class="product-card-header-button bg-[#141718] w-full">
+                  Add to cart
+                </button>
+              </div>
+            </div>
+            <div class="product-content flex flex-col gap-1">
+              <div class="stars flex gap-[2px]">
+                <img src="assets/Star Fill.svg" alt="" />
+                <img src="assets/Star Fill.svg" alt="" />
+                <img src="assets/Star Fill.svg" alt="" />
+                <img src="assets/Star Fill.svg" alt="" />
+                <img src="assets/Star Fill.svg" alt="" />
+              </div>
+              <p class="text-body-2">
+                Beats
+                <br />
+                Studio Pro
+              </p>
+              <p class="caption-1 text-[#121212]">$249.99</p>
+            </div>
+          </div>
+          <div
+            class="bestseller-card flex flex-col gap-3 group/product-card w-full"
+          >
+            <div
+              class="bestseller-card-header flex flex-col items-center bg-[#F3F5F7]"
+            >
+              <div
+                class="product-card-header-badges flex justify-between w-full px-4"
+              >
+                <div class="product-card-header-badge">HOT</div>
+                <div
+                  class="product-card-header-favorite opacity-0 group-hover/product-card:opacity-100 transition group/heart"
+                >
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M10.577 5.76422C10.2546 6.07365 9.74548 6.07365 9.42304 5.76422L8.84604 5.2105C8.17068 4.56239 7.25832 4.16667 6.25004 4.16667C4.17897 4.16667 2.50004 5.8456 2.50004 7.91667C2.50004 9.90219 3.57486 11.5417 5.1265 12.8888C6.67947 14.237 8.53621 15.1312 9.64558 15.5876C9.87754 15.683 10.1225 15.683 10.3545 15.5876C11.4639 15.1312 13.3206 14.237 14.8736 12.8888C16.4252 11.5417 17.5 9.90218 17.5 7.91667C17.5 5.8456 15.8211 4.16667 13.75 4.16667C12.7418 4.16667 11.8294 4.56239 11.154 5.2105L10.577 5.76422ZM10 4.00798C9.0268 3.074 7.70545 2.5 6.25004 2.5C3.2585 2.5 0.833374 4.92512 0.833374 7.91667C0.833374 13.2235 6.64199 16.1542 9.01153 17.1289C9.64968 17.3914 10.3504 17.3914 10.9885 17.1289C13.3581 16.1542 19.1667 13.2235 19.1667 7.91667C19.1667 4.92512 16.7416 2.5 13.75 2.5C12.2946 2.5 10.9733 3.074 10 4.00798Z"
+                      fill="#6C7275"
+                      class="group-hover/heart:fill-red-500"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <img src="assets/jbl_buds.png" alt="" />
+              <div
+                class="w-full px-4 pb-4 opacity-0 group-hover/product-card:opacity-100 transition"
+              >
+                <button class="product-card-header-button bg-[#141718] w-full">
+                  Add to cart
+                </button>
+              </div>
+            </div>
+            <div class="product-content flex flex-col gap-1">
+              <div class="stars flex gap-[2px]">
+                <img src="assets/Star Fill.svg" alt="" />
+                <img src="assets/Star Fill.svg" alt="" />
+                <img src="assets/Star Fill.svg" alt="" />
+                <img src="assets/Star Fill.svg" alt="" />
+                <img src="assets/Star Fill.svg" alt="" />
+              </div>
+              <p class="text-body-2">
+                JBL Reflect Flow Pro+ Bluetooth Truly Wireless Sports
+              </p>
+              <p class="caption-1 text-[#121212]">$179.99</p>
+            </div>
+          </div>
+          <div
+            class="bestseller-card flex flex-col gap-3 group/product-card w-full"
+          >
+            <div
+              class="bestseller-card-header flex flex-col items-center bg-[#F3F5F7]"
+            >
+              <div
+                class="product-card-header-badges flex justify-between w-full px-4"
+              >
+                <div class="product-card-header-badge">HOT</div>
+                <div
+                  class="product-card-header-favorite h-full opacity-0 group-hover/product-card:opacity-100 transition group/heart"
+                >
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M10.577 5.76422C10.2546 6.07365 9.74548 6.07365 9.42304 5.76422L8.84604 5.2105C8.17068 4.56239 7.25832 4.16667 6.25004 4.16667C4.17897 4.16667 2.50004 5.8456 2.50004 7.91667C2.50004 9.90219 3.57486 11.5417 5.1265 12.8888C6.67947 14.237 8.53621 15.1312 9.64558 15.5876C9.87754 15.683 10.1225 15.683 10.3545 15.5876C11.4639 15.1312 13.3206 14.237 14.8736 12.8888C16.4252 11.5417 17.5 9.90218 17.5 7.91667C17.5 5.8456 15.8211 4.16667 13.75 4.16667C12.7418 4.16667 11.8294 4.56239 11.154 5.2105L10.577 5.76422ZM10 4.00798C9.0268 3.074 7.70545 2.5 6.25004 2.5C3.2585 2.5 0.833374 4.92512 0.833374 7.91667C0.833374 13.2235 6.64199 16.1542 9.01153 17.1289C9.64968 17.3914 10.3504 17.3914 10.9885 17.1289C13.3581 16.1542 19.1667 13.2235 19.1667 7.91667C19.1667 4.92512 16.7416 2.5 13.75 2.5C12.2946 2.5 10.9733 3.074 10 4.00798Z"
+                      fill="#6C7275"
+                      class="group-hover/heart:fill-red-500"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <img
+                src="assets/bose_qc.png"
+                class="h-full object-cover"
+                alt=""
+              />
+              <div
+                class="w-full px-4 pb-4 opacity-0 group-hover/product-card:opacity-100 transition"
+              >
+                <button class="product-card-header-button bg-[#141718] w-full">
+                  Add to cart
+                </button>
+              </div>
+            </div>
+            <div class="product-content flex flex-col gap-1">
+              <div class="stars flex gap-[2px]">
+                <img src="assets/Star Fill.svg" alt="" />
+                <img src="assets/Star Fill.svg" alt="" />
+                <img src="assets/Star Fill.svg" alt="" />
+                <img src="assets/Star Fill.svg" alt="" />
+                <img src="assets/Star Fill.svg" alt="" />
+              </div>
+              <p class="text-body-2">
+                Bose
+                <br />
+                QuietComfort Headphones
+              </p>
+              <p class="caption-1 text-[#121212]">$349.99</p>
+            </div>
+          </div>
+          <div
+            class="bestseller-card flex flex-col gap-3 group/product-card w-full"
+          >
+            <div
+              class="bestseller-card-header flex flex-col items-center bg-[#F3F5F7]"
+            >
+              <div
+                class="product-card-header-badges flex justify-between w-full px-4"
+              >
+                <div class="product-card-header-badge">HOT</div>
+                <div
+                  class="product-card-header-favorite opacity-0 group-hover/product-card:opacity-100 transition group/heart"
+                >
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M10.577 5.76422C10.2546 6.07365 9.74548 6.07365 9.42304 5.76422L8.84604 5.2105C8.17068 4.56239 7.25832 4.16667 6.25004 4.16667C4.17897 4.16667 2.50004 5.8456 2.50004 7.91667C2.50004 9.90219 3.57486 11.5417 5.1265 12.8888C6.67947 14.237 8.53621 15.1312 9.64558 15.5876C9.87754 15.683 10.1225 15.683 10.3545 15.5876C11.4639 15.1312 13.3206 14.237 14.8736 12.8888C16.4252 11.5417 17.5 9.90218 17.5 7.91667C17.5 5.8456 15.8211 4.16667 13.75 4.16667C12.7418 4.16667 11.8294 4.56239 11.154 5.2105L10.577 5.76422ZM10 4.00798C9.0268 3.074 7.70545 2.5 6.25004 2.5C3.2585 2.5 0.833374 4.92512 0.833374 7.91667C0.833374 13.2235 6.64199 16.1542 9.01153 17.1289C9.64968 17.3914 10.3504 17.3914 10.9885 17.1289C13.3581 16.1542 19.1667 13.2235 19.1667 7.91667C19.1667 4.92512 16.7416 2.5 13.75 2.5C12.2946 2.5 10.9733 3.074 10 4.00798Z"
+                      fill="#6C7275"
+                      class="group-hover/heart:fill-red-500"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <img src="assets/akg.png" alt="" />
+              <div
+                class="w-full px-4 pb-4 opacity-0 group-hover/product-card:opacity-100 transition"
+              >
+                <button class="product-card-header-button bg-[#141718] w-full">
+                  Add to cart
+                </button>
+              </div>
+            </div>
+            <div class="product-content flex flex-col gap-1">
+              <div class="stars flex gap-[2px]">
+                <img src="assets/Star Fill.svg" alt="" />
+                <img src="assets/Star Fill.svg" alt="" />
+                <img src="assets/Star Fill.svg" alt="" />
+                <img src="assets/Star Fill.svg" alt="" />
+                <img src="assets/Star Fill.svg" alt="" />
+              </div>
+              <p class="text-body-2">
+                AKG
+                <br />
+                Y600NC Wireless
+              </p>
+              <p class="caption-1 text-[#121212]">$299.99</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="promotion" class="flex flex-col-reverse lg:flex-row">
+      <div class="lg:w-1/2">
+        <img
+          src="assets/man_wearing_heaphones.jpeg"
+          alt="Man wearing headphones"
+        />
+      </div>
+      <div
+        class="lg:w-1/2 flex flex-col justify-center px-8 py-7 lg:py-0 lg:px-[72px] gap-6 bg-[#FFAB0066]"
+      >
+        <div class="flex flex-col gap-4">
+          <h2 class="hairline-1 text-[#377DFF]">PROMOTION</h2>
+          <h3 class="heading-5 md:heading-4 text-[#121212]">
+            Hurry up! 40% OFF
+          </h3>
+          <p class="caption-1 md:body-1 text-[#121212]">
+            Thousands of high tech are waiting for you
+          </p>
+        </div>
+        <div class="flex flex-col gap-3">
+          <p class="expires text-[#141718]">Offer expires in:</p>
+          <div class="flex gap-4">
+            <div>
+              <p class="time">02</p>
+              <p class="time-sub">Days</p>
+            </div>
+            <div>
+              <p class="time">12</p>
+              <p class="time-sub">Hours</p>
+            </div>
+            <div>
+              <p class="time">45</p>
+              <p class="time-sub">Minutes</p>
+            </div>
+            <div>
+              <p class="time">05</p>
+              <p class="time-sub">Seconds</p>
+            </div>
+          </div>
+        </div>
+        <div>
+          <button
+            class="py-[6px] px-10 bg-[#141718] text-white rounded-lg button-xs md:button-s"
+          >
+            Shop Now
+          </button>
+        </div>
+      </div>
+    </div>
+    <div id="benefits" class="flex justify-center py-10">
+      <div class="container px-8">
+        <div class="grid grid-cols-2 lg:grid-cols-4 md:gap-6 gap-2">
+          <div
+            class="flex flex-col gap-4 py-8 px-4 md:py-12 md:px-9 bg-[#F3F5F7]"
+          >
+            <img class="w-12 h-12" src="assets/fast delivery.svg" alt="" />
+            <div class="flex flex-col gap-2">
+              <h2 class="caption-1-semi md:heading-7">Free Shipping</h2>
+              <p class="benefit-sub">
+                Order<br class="block md:hidden" />above $200
+              </p>
+            </div>
+          </div>
+          <div
+            class="flex flex-col gap-4 py-8 px-4 md:py-12 md:px-9 bg-[#F3F5F7]"
+          >
+            <img class="w-12 h-12" src="assets/fast delivery.svg" alt="" />
+            <div class="flex flex-col gap-2">
+              <h2 class="caption-1-semi md:heading-7">Money-back</h2>
+              <p class="benefit-sub">
+                30 days<br class="block md:hidden" />
+                guarantee
+              </p>
+            </div>
+          </div>
+          <div
+            class="flex flex-col gap-4 py-8 px-4 md:py-12 md:px-9 bg-[#F3F5F7]"
+          >
+            <img class="w-12 h-12" src="assets/fast delivery.svg" alt="" />
+            <div class="flex flex-col gap-2">
+              <h2 class="caption-1-semi md:heading-7">Secure payments</h2>
+              <p class="benefit-sub">Secured by Stripe</p>
+            </div>
+          </div>
+          <div
+            class="flex flex-col gap-4 py-8 px-4 md:py-12 md:px-9 bg-[#F3F5F7]"
+          >
+            <img class="w-12 h-12" src="assets/fast delivery.svg" alt="" />
+            <div class="flex flex-col gap-2">
+              <h2 class="caption-1-semi md:heading-7">24/7 Support</h2>
+              <p class="benefit-sub">Phone and Email support</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="newsfeed" class="flex justify-center py-10">
+      <div class="container px-8">
+        <div class="flex flex-col gap-10">
+          <div class="flex flex-col text-center gap-4">
+            <p class="hairline-1 text-[#6C7275]">NEWSFEED</p>
+            <h4 class="heading-5 md:heading-4 text-[#121212]">Instagram</h4>
+            <p class="caption-1 md:body-1">
+              Follow us on social media for more discounts & promotions
+            </p>
+            <a class="heading-7 text-[#6C7275]" href="#">@3legant_official</a>
+          </div>
+          <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+            <a href="#" class="group overflow-hidden">
+              <img
+                class="aspect-square object-cover w-full group-hover:scale-105 transition duration-300"
+                src="assets/ig-post-1.jpeg"
+                alt=""
+              />
+            </a>
+            <a href="#" class="group overflow-hidden">
+              <img
+                class="aspect-square object-cover w-full group-hover:scale-105 transition duration-300"
+                src="assets/ig-post-2.jpeg"
+                alt=""
+              />
+            </a>
+            <a href="#" class="group overflow-hidden">
+              <img
+                class="aspect-square object-cover w-full group-hover:scale-105 transition duration-300"
+                src="assets/ig-post-3.jpeg"
+                alt=""
+              />
+            </a>
+            <a href="#" class="group overflow-hidden">
+              <img
+                class="aspect-square object-cover w-full group-hover:scale-105 transition duration-300"
+                src="assets/ig-post-4.jpeg"
+                alt=""
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      id="newsletter"
+      class="flex justify-center relative overflow-hidden px-8"
+    >
+      <div class="flex flex-col gap-8 pt-[101px] pb-[93px]">
+        <div class="flex flex-col gap-2">
+          <h2 class="heading-6 md:heading-4 text-center">
+            Join Our Newsletter
+          </h2>
+          <p class="body-5 md:body-2">
+            Sign up for deals, new products and promotions
+          </p>
+        </div>
+        <div class="flex gap-2 border-b border-[#6C7275] py-3">
+          <img src="assets/email.svg" alt="" />
+          <input
+            class="bg-transparent ring-0 outline-none w-full placeholder:text-[#6C7275]"
+            type="email"
+            placeholder="Email address"
+          />
+          <button class="text-[#6C7275]">Signup</button>
+        </div>
+      </div>
+      <img
+        class="absolute h-full object-cover left-[5%] -rotate-[25deg] hidden xl:block opacity-80"
+        src="assets/beats-studio.png"
+        alt=""
+      />
+    </div>
+    <footer
+      class="flex justify-center bg-[#141718] py-12 md:pt-[80px] md:pb-[32px]"
+    >
+      <div class="container flex flex-col gap-[49px] px-8">
+        <div class="flex flex-col md:flex-row justify-between gap-10 md:gap-0">
+          <div class="flex flex-col md:flex-row gap-4 md:gap-6 items-center">
+            <h2 class="footer-logo">3legant.</h2>
+            <div class="footer-separator-vertical hidden md:block"></div>
+            <div class="footer-separator-horizontal md:hidden"></div>
+            <p class="footer-sub">Headphone Store</p>
+          </div>
+          <nav class="footer-nav">
+            <ul
+              class="flex flex-col md:flex-row gap-10 text-[#FEFEFE] caption-1 font-normal text-center"
+            >
+              <li>
+                <a class="hover:text-[#ffc95c] transition" href="#">Home</a>
+              </li>
+              <li>
+                <a class="hover:text-[#ffc95c] transition" href="#">Shop</a>
+              </li>
+              <li>
+                <a class="hover:text-[#ffc95c] transition" href="#">Product</a>
+              </li>
+              <li>
+                <a class="hover:text-[#ffc95c] transition" href="#">Blog</a>
+              </li>
+              <li>
+                <a class="hover:text-[#ffc95c] transition" href="#"
+                  >Contact Us</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div
+          class="flex flex-col-reverse md:flex-row md:justify-between py-4 border-t border-[#6C7275]"
+        >
+          <div class="flex flex-col-reverse md:flex-row gap-7 items-center">
+            <p class="copyright text-[#E8ECEF]">
+              Copyright © 2023 3legant. All rights reserved
+            </p>
+            <a
+              class="text-[#FEFEFE] policy-terms hover:text-[#ffc95c] transition"
+              href="#"
+              >Privacy Policy</a
+            >
+            <a
+              class="text-[#FEFEFE] policy-terms hover:text-[#ffc95c] transition"
+              href="#"
+              >Terms of Use</a
+            >
+          </div>
+          <div
+            class="flex socials gap-6 mt-6 mb-8 md:mt-0 md:mb-0 items-center justify-center"
+          >
+            <a href="#">
+              <img src="assets/instagram.svg" alt="Instagram" />
+            </a>
+            <a href="#">
+              <img src="assets/facebook.svg" alt="Facebook" />
+            </a>
+            <a href="#">
+              <img src="assets/youtube.svg" alt="Youtube" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
