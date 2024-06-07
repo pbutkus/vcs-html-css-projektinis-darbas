@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>3legant. | Headphone Store</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -29,7 +29,7 @@
           <img src="assets/arrow-right.svg" alt="" />
         </a>
       </div>
-      <nav class="main-nav flex justify-center py-4 relative">
+      <nav class="main-nav flex justify-center py-4 md:py-0 relative">
         <div class="container px-8">
           <div class="flex justify-between">
             <div class="flex items-center">
@@ -76,10 +76,25 @@
               >
             </div>
             <ul class="hidden md:flex gap-10 button-xs">
-              <li><a href="#">Home</a></li>
-              <li><a href="#">Shop</a></li>
-              <li><a href="#">Product</a></li>
-              <li><a href="#">Contact Us</a></li>
+              <li><a class="py-4 block" href="#">Home</a></li>
+              <li><a class="py-4 block" href="#">Shop</a></li>
+              <li class="relative group">
+                <a class="flex items-center py-4 gap-1" href="#"
+                  >Product
+                  <img
+                    class="group-hover:rotate-180 transition"
+                    src="assets/chevron-down.svg"
+                    alt=""
+                /></a>
+                <ul
+                  class="absolute bg-white hidden border border-t-transparent group-hover:block"
+                >
+                  <li><a class="block p-2" href="#">Headphones</a></li>
+                  <li><a class="block p-2" href="#">Earbuds</a></li>
+                  <li><a class="block p-2" href="#">Accesories</a></li>
+                </ul>
+              </li>
+              <li><a class="py-4 block" href="#">Contact Us</a></li>
             </ul>
             <ul class="flex gap-4">
               <li class="hidden md:flex items-center">
